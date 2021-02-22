@@ -1,5 +1,5 @@
 {
-  "name": "Milkshake",
+  "name": "Cheff Já",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -32,6 +32,5 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2"
-  },
-  "dependencies": {}
+  }
 }

@@ -10,7 +10,16 @@ $(document).ready(function() {
     }
   }); */
   
-  
+  $.currentYear();  
       
 });
 
+$.currentYear = function() {
+  
+  var date = new Date(),
+      currentYear = date.getFullYear(),
+      html = '<span class="powered">&copy; Copyright '+ currentYear +', CHEFF JÁ - Todos os direitos reservados.</span>';
+
+  $('.powered').html(html); 
+
+}

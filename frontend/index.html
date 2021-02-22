@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>
-    Agência Milkshake - Design e Desenvolvimento Web - Rio de Janeiro
+    Cheff Já - Seu refeição 5 estrelas em um click! - Rio de Janeiro
   </title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -27,8 +27,19 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
+  
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="dist/bootstrap.min.css" />
+  
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=RocknRoll+One&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
   <link rel="stylesheet" href="dist/main.css" />
 
 </head>
@@ -41,7 +52,7 @@
     <header id="sticky">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="/dist/mk-logo-completo.svg" alt="Milkshake Branding & Design"/></a>
+          <a class="navbar-brand" href="#"><img class="img-fluid" src="/dist/cheff-ja-logo-white.png" alt="Cheff já"/></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,212 +73,144 @@
               </li>
             </ul>
           </div>
-          <div class="social">
-            <ul>
-              <li><a href="" alt="whatsapp"><i class="icon whatsapp"></i><span class="d-none">whatsapp</span></a></li>
-              <li><a href="" alt="instagram"><i class="icon instagram"></i><span class="d-none">instagram</span></a></li>
-              <li><a href="" alt="linkedin"><i class="icon linkedin"></i><span class="d-none">linkedin</span></a></li>
-            </ul>
-          </div>
         </div>
       </nav>
     </header>
     <!-- /header -->
 
-    <!-- hero -->
-    <section class="hero mk-pb-150 mk-width-100" id="start">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-7 offset-lg-3">
-            <h1>
-              Design thinking com foco em usabilidade e experiência do usuário.
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Nós somos a <span><strong>MILKSHAKE</strong> Branding & design.</span>
-            </p>
-            <a class="mk-calltoaction" href="" alt="Call to Action">Call to Action</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /hero -->
+    <section class="page-content" id="page-content">
 
-    <!-- intro -->
-    <section class="intro mk-p-default mk-width-100" id="intro">
-      <div class="container">
-        <h2 class="d-none">Introdução</h2>
+      <div class="container login-tabs">
         <div class="row">
           <div class="col">
-            <p class="mk-text">
-              We at MS B&D focus on user experience and user interface. Our experienced design studio will accompany you from vision to the final product, providing you the best possible user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /intro -->
+            
+            <!-- Nav pills -->
+            <ul class="nav nav-pills justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#login1">Quero ser Cliente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#login2">Quero ser Cheff</a>
+              </li>
+            </ul>
 
-    <!-- reel -->
-    <section class="reel mk-p-default mk-width-100" id="reel">
-      <div class="container">
-        <h2 class="d-none">Reel</h2>
-        <div class="row">
-          <div class="col-12">
-            <div class="card mk-p-rl mk-pt-45 mk-pb-15 mb-5">
-              <img class="card-img-top" src="dist/mk-job-dpsp.png" alt="Grupo DPSP">
-              <div class="card-body">
-                <h3 class="card-title">Grupo DPSP</h3>
-                <p class="card-text">UX/UI, Developement</p>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane container active" id="login1">
+                <div class="container login-container">
+                  <div class="row">
+                    
+                    <div class="col-md-6 offset-md-3 login-form-1">
+                      <h3>Quero ser cliente</h3>
+                      <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Seu Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control" placeholder="Sua Senha *" value="" />
+                        </div>
+                        <div class="form-group">
+                          <input type="submit" class="btnSubmit" value="Cadastre-se" />
+                        </div>
+                        <div class="form-group btn-spacer">
+                          <a href="#" class="ForgetPwd" value="Login">Entrar</a>
+                          <a href="#" class="ForgetPwd">Esqueceu sua senha?</a>
+                        </div>
+                      </form>
+                    </div>
+                    
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="card mk-p-rl mk-pt-45 mk-pb-15 mb-5">
-              <img class="card-img-top" src="dist/mk-job-giinger.png" alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-title">Giinger Foodtech</h3>
-                <p class="card-text">Branding, UX/UI, Developement</p>
-              </div>
-            </div>
-            <div class="card mk-p-rl mk-pt-45 mk-pb-15 mb-5">
-              <img class="card-img-top" src="dist/mk-job-casio.png" alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-title">Casio</h3>
-                <p class="card-text">UX/UI</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /reel -->
+              <div class="tab-pane container fade" id="login2">
+                <div class="container login-container">
+                  <div class="row">
 
-    <!-- about -->
-    <section class="about mk-width-100" id="about">
-      <div class="container">
-        <h2 class="d-none">About</h2>
-        <div class="row">
-          <div class="col-12 col-lg-5">
-            <div class="mk-box left">
-              <h3>O que fazemos</h3>
-              <p>
-                In line with our tradition as a design studio, we take pride in crafting the most beautiful and unique brand and digital experiences, products and ecommerce. The result is bespoke experiences that reflect our clients’ unique identities. No two Concept Studio projects look alike, but each one is distinctly Concept.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 offset-lg-1">
-            <div class="mk-box right">
-              <div class="list">
-                <h4>Skills</h4>
-                <ul>
-                  <li>UX/UI</li>
-                  <li>Design Web</li>
-                  <li>Development</li>
-                  <li>Digital Branding</li>
-                  <li>Direção de Arte</li>
-                </ul>
-              </div>
-              <div class="list">
-                <h4>Tools</h4>
-                <ul>
-                  <li>HTML, CSS e JS</li>
-                  <li>Webflow</li>
-                  <li>Wordpress</li>
-                  <li>Adobe Design</li>
-                  <li>Figma</li>
-                </ul>
-              </div>
-              <div class="list">
-                <h4>Services</h4>
-                <ul>
-                  <li>Landing Pages</li>
-                  <li>Website</li>
-                  <li>E-commerce</li>
-                  <li>App Design</li>
-                  <li>Identidade Visual</li>
-                </ul>
+                    <div class="col-md-6 offset-md-3 login-form-2">
+                      <h3>Quer ser Cheff</h3>
+                      <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Seu Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control" placeholder="Sua Senha *" value="" />
+                        </div>
+                        <div class="form-group">
+                          <input type="submit" class="btnSubmit" value="Cadastre-se" />
+                        </div>
+                        <div class="form-group btn-spacer">
+                          <a href="#" class="ForgetPwd" value="Login">Entrar</a>
+                          <a href="#" class="ForgetPwd" value="Login">Esqueceu sua senha?</a>
+                        </div>
+                      </form>
+                    </div>
+
+                  </div>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
+
+      <div class="container login-container">
+        <div class="row">
+          <div class="col-md-6 login-form-1">
+            <h3>Quero ser cliente</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Seu Email *" value="" />
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Sua Senha *" value="" />
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btnSubmit" value="Cadastre-se" />
+              </div>
+              <div class="form-group btn-spacer">
+                <a href="#" class="ForgetPwd" value="Login">Entrar</a>
+                <a href="#" class="ForgetPwd">Esqueceu sua senha?</a>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 login-form-2">
+            <h3>Quer ser Cheff</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Seu Email *" value="" />
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Sua Senha *" value="" />
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btnSubmit" value="Cadastre-se" />
+              </div>
+              <div class="form-group btn-spacer">
+                <a href="#" class="ForgetPwd" value="Login">Entrar</a>
+                <a href="#" class="ForgetPwd" value="Login">Esqueceu sua senha?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
     </section>
-    <!-- /about -->
     
-    <!-- brands -->
-    <section class="brands mk-pt-45 mk-width-100" id="brands">
-      <div class="container">
-        <h2 class="d-none">Brands</h2>
-        <div class="row align-items-center mk-brands">
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-cea.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-swift.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-dsp.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-dpa.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-seculus.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-piglove.png" alt="" />
-          </div>
-          
-          <div class="w-100"></div>
-          
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-casio.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-ck.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-organomix.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-wollner.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-giinger.png" alt="" />
-          </div>
-          <div class="mk-brand-item col-6 col-md-4 col-lg-2">
-            <img class="img-fluid" src="dist/mk-brand-epc.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /brands -->
-
     <!-- footer -->
-    <footer class="contact mk-p-default mk-width-100" id="contact">
+    <footer class="contact" id="contact">
       <div class="container">
-        <h2 class="d-none">Contato</h2>
-        <div class="row">
-          <div class="col-12">
-            <div class="mk-footer">
-              <h3>Dá um alô,<br> a gente não morde!</h3>
-              <i class="icon milkshake"></i>
-            </div>
-            <address>
-              <a class="mk-email" href="mailto:">contato@agenciamilkshake.com.br</a>
-              <a class="mk-phone" href="tel:+5521979505189">+55 21 979 505 189</a>
-              <span class="mk-adress">Avenida das Américas, 500 - Bloco 7 - Barra da Tijuca, RJ</span>  
-            </address>
-          </div>
-        </div>
+        
       </div>
     </footer>
     <!-- /footer -->
 
     <!-- credits -->
-    <div class="credits mk-width-100">
+    <div class="credits">
       <div class="container">
         <div class="row">
           <div class="col">
-            <p class="powered mk-powered">Mixed with <i class="icon heart"></i> by <a href="#" alt="Milkshake Branding & Design" title="Milkshake Branding & Design"><i class="icon milkshake"></i></a></p>
+            <small class="powered"></small>
           </div>
         </div>  
       </div>
