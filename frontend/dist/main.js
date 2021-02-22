@@ -1,1 +1,0 @@
-$(document).ready(function(){$.currentYear()}),$.currentYear=function(){var e='<span class="powered">&copy; Copyright '+(new Date).getFullYear()+", CHEFF JÁ - Todos os direitos reservados.</span>";$(".powered").html(e)};
