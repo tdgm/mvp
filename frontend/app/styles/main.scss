@@ -55,6 +55,16 @@ ul {
 	margin: 0px;
 }
 
+.nav-pills .nav-link {
+	color: $default-1;
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+	color: $clr_white;
+	background-color: $default-1;
+}
+
 .login-container {
 	margin-top: 5%;
 	margin-bottom: 5%;
